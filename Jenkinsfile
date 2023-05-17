@@ -2,10 +2,6 @@
 
 pipeline {
 
-  agent {
-    label 'jmeter'
-  }
-
   triggers{
     cron('H 23 * * *')
   }
