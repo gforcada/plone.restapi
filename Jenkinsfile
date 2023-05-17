@@ -2,6 +2,12 @@
 
 pipeline {
 
+  agent {
+    label 'hetzner'
+  }
+
+
+  
   triggers{
     cron('H 23 * * *')
   }
