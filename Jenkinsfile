@@ -2,10 +2,9 @@
 
 pipeline {
 
-  agent any
-// agent {
-//    label 'jmeter'
-//  }
+ agent {
+    label 'jmeter'
+  }
 
 //  triggers{
 //    cron('H 23 * * *')
