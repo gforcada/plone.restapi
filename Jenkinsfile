@@ -2,7 +2,8 @@
 
 pipeline {
 
-//  agent {
+  agent any
+// agent {
 //    label 'jmeter'
 //  }
 
