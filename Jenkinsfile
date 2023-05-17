@@ -1,10 +1,5 @@
-pipeline {
     agent any
-    echo 'before checkout'
-node {
-    checkout scm
-}    
-    
+
     stages {
         stage('Build') {
             steps {
@@ -22,4 +17,3 @@ node {
             }
         }
     }
-}
