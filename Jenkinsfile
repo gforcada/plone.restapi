@@ -6,12 +6,6 @@ pipeline {
     label 'hetzner'
   }
 
-
-  
-  triggers{
-    cron('H 23 * * *')
-  }
-
   options {
     buildDiscarder(logRotator(numToKeepStr:'100'))
     // timeout(time: 60, unit: 'MINUTES')
